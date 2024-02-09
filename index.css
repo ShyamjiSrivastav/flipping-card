@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    height: 100%;
+    position: relative;
+    background-color: black;
+    perspective: 1000px;
+}
+
+#ballimg1{
+    position: absolute;
+    left: 18%;
+    top: 3%;
+    width: 350px;
+}
+
+#ballimg2{
+    position: absolute;
+    left: 49%;
+    top: 35%;
+    width: 350px;
+}
+
+.card{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: white;
+    transition: all 0.9s;
+    transform-style: preserve-3d;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+#image1{
+    width: 90px;
+}
+
+#image2{
+    width: 120px;
+    position: absolute;
+    left:370px;
+    height: 100px;
+    top: -10px;
+}
+
+.upperpart{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    height: 28%;
+    width: 100%;
+}
+
+.heading{
+    position: absolute;
+    left: 80px;
+    width: 110px;
+    font-size: 18px;
+}
+
+.lowerpart{
+    width: 100%;
+    height: 72%;
+}
+
+.text{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.card-number{
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    font-size: 28px;
+}
+
+.holdername{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    font-size: 18px;
+}
+
+.validity-text{
+    position: absolute;
+    top:72%;
+    left: 80%;
+}
+
+.validity-date{
+    position: absolute;
+    top: 82%;
+    left: 80%;
+}
+
+.backpart{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.card:hover .backpart{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+.card:hover .upperpart{
+    opacity: 0;
+}
+
+.card:hover .lowerpart{
+    opacity: 0;
+}
+
+
+.details{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    font-size: 12px;
+}
+
+.coloredpart{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: 48px;
+    background-color: black;
+}
+
+.cvv{
+    position: relative;
+    top: 49%;
+    left: 20px;
+    width: 90%;
+    height: 23px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.coverdiv{
+    position: absolute;
+    top: 46.5%;
+    left: 20px;
+    width: 84%;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.greyarea{
+    position: absolute;
+    top: 47.5%;
+    left: 20px;
+    width: 84%;
+    height: 6px;
+    background-color: rgb(169, 165, 165);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.greyarea1{
+    position: absolute;
+    top: 51.5%;
+    left: 20px;
+    width: 84%;
+    height: 6px;
+    background-color: rgb(169, 165, 165);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.greyarea2{
+    position: absolute;
+    top: 55.5%;
+    left: 20px;
+    width: 84%;
+    height: 6px;
+    background-color: rgb(169, 165, 165);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.greyarea3{
+    position: absolute;
+    top: 59.5%;
+    left: 20px;
+    width: 84%;
+    height: 6px;
+    background-color: rgb(169, 165, 165);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.cvvnum{
+    position: absolute;
+    left: 94%;
+    top: 2px;
+    width: 20px;
+    height: 100%;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.description{
+    position: absolute;
+    top: 72%;
+    left: 20px;
+    font-size: 12px;
+    width: 90%;
+}
